@@ -1,0 +1,39 @@
+{
+  "name": "deliumjs",
+  "version": "1.0.0",
+  "description": "🔑 Encryption method based on deleting",
+  "main": "index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "npx ts-node src/index.ts",
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yahya-aghdam/Deliumjs.git"
+  },
+  "keywords": [
+    "Encryption",
+    "sha-256",
+    "sha512"
+  ],
+  "author": "Yahya aghdam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yahya-aghdam/Deliumjs/issues"
+  },
+  "homepage": "https://github.com/yahya-aghdam/Deliumjs#readme",
+  "devDependencies": {
+    "@types/node": "^22.1.0",
+    "eslint": "^9.8.0",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "js-sha256": "^0.11.0",
+    "js-sha512": "^0.9.0"
+  }
+}
