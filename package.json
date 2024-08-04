@@ -1,8 +1,8 @@
 {
   "name": "deliumjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "🔑 Encryption method based on deleting",
-  "main": "index.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "dev": "npx ts-node src/index.ts",
@@ -10,6 +10,12 @@
     "clean": "rm -rf dist",
     "prepublishOnly": "npm run clean && npm run build"
   },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yahya-aghdam/Deliumjs.git"
